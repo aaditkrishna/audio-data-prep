@@ -1,0 +1,95 @@
+
+# ==================================================
+# AUDIO DATA: KEEP LOCAL, DO NOT UPLOAD TO GITHUB
+# ==================================================
+
+# Incoming original recordings
+data/incoming/*
+!data/incoming/**/
+!data/incoming/source_metadata_template.csv
+
+# Standardized audio, segmented clips, and temporary copies
+data/processed/
+data/segmented/
+data/segmented_before_dedup/
+
+# Ignore any generated audio files elsewhere in the project
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.ogg
+*.opus
+*.aac
+*.wma
+
+# ==================================================
+# GENERATED METADATA, MANIFESTS, REPORTS AND LOGS
+# ==================================================
+
+data/metadata/*
+!data/metadata/.gitkeep
+
+reports/*
+!reports/.gitkeep
+
+*.log
+
+# ==================================================
+# PYTHON ENVIRONMENTS AND CACHES
+# ==================================================
+
+.venv/
+venv/
+env/
+ENV/
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ==================================================
+# BACKUPS AND TEMPORARY FILES
+# ==================================================
+
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+*.temp
+*~
+*.swp
+*.swo
+
+# ==================================================
+# EDITORS AND OPERATING SYSTEM FILES
+# ==================================================
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==================================================
+# SECRETS AND LOCAL ENVIRONMENT SETTINGS
+# ==================================================
+
+.env
+.env.*
+!.env.example
+
+# ==================================================
+# LOCAL MODEL WEIGHTS AND DOWNLOADS
+# ==================================================
+
+models/
+checkpoints/
+*.pt
+*.pth
+*.onnx
+*.ckpt

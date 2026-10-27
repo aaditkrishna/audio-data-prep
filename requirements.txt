@@ -1,2 +1,3 @@
-# Module 1 uses only the Python standard library.
-# FFmpeg/ffprobe must be installed separately and available on PATH.
+# Python dependencies for the current ingestion module:
+# None beyond the Python standard library.
+# Install FFmpeg separately; the ffprobe executable must be available on PATH.
